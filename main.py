@@ -31,7 +31,6 @@ tokenized_datasets = dataset.map(tokenize_function, batched=True)
 # 3. Define Training Arguments
 training_args = TrainingArguments(
     output_dir="./gpt2-finetuned",
-    overwrite_output_dir=True,
     num_train_epochs=3,
     per_device_train_batch_size=2,
     save_steps=10,
